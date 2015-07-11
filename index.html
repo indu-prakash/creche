@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="creche">
+    <meta name="author" content="Indu Prakash">
+    <title>Toddler Town</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link href='fonts/fonts.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="css/creche.css" type="text/css">
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(12.967750, 80.152368),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var marker = new google.maps.Marker({  
+          position: new google.maps.LatLng(12.967750, 80.152368),  
+          map: map  
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    </head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Toddler Town</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Welcome To Toddler Town</h1>
+                <hr>
+                <p>We are a Crèche with a Difference for your little one to Play, Learn and Grow.</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+    </header>
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Know Us</h2>
+                    <hr class="light">
+                    <p class="text-faded">Started in 2015, we are a Crèche located in the heart Of Chennai. We Offer Quality Childcare for parents and offers a home-away-from-home atmosphere for the kids, so you don't have to worry about a thing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">At Your Service</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-child wow bounceIn text-primary" style="color:#00308f;"></i>
+                        <h3>Excellent Childcare</h3>
+                        <p class="text-muted">We care for your child like our own</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-users wow bounceIn text-primary" data-wow-delay=".1s" style="color:#50d000;"></i>
+                        <h3>Qualified Staff</h3>
+                        <p class="text-muted">Friendly and dedicated carers for your baby</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".3s" style="color:#f040d1;"></i>
+                        <h3>Learn With Fun</h3>
+                        <p class="text-muted">Creative and Enriching Learning Experience</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-smile-o wow bounceIn text-primary" data-wow-delay=".2s" style="color:#E74F0B;"></i>
+                        <h3>Happiness</h3>
+                        <p class="text-muted">We provide a happy and nurturing environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>123-456-6789</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:contact@toddlertown.com">contact@toddlertown.com</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="map-canvas"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div style="margin:10px;" align="center">
+            <p>Website Coded with <i class="fa fa-heart wow pulse text-primary" data-wow-delay=".3s" style='color:red;'></i> by LittleThunder</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fittext.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/creche.js"></script>
+
+</body>
+
+</html>
